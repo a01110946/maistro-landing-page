@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maistro - AI-Powered Design for Prefab Innovation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon_ico/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon_ico/favicon-16x16.png" type="image/png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center">
+                <svg class="w-10 h-10 mr-3" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="8" fill="#3490dc"/>
+                    <path d="M20 8L32 20L20 32L8 20L20 8Z" fill="white"/>
+                    <path d="M20 14L26 20L20 26L14 20L20 14Z" fill="#3490dc"/>
+                </svg>
+                <h1 class="text-2xl font-bold text-gray-800">Maistro</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#features" class="text-gray-600 hover:text-gray-800 transition">Features</a></li>
+                    <li><a href="#future" class="text-gray-600 hover:text-gray-800 transition">Roadmap</a></li>
+                    <li><a href="#signup" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Revolutionize Prefab Home Design with Maistro</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Transform your prefab house building process with Maistro, the cutting-edge AI copilot for the AEC industry. Say goodbye to months of design work and hello to assembly-ready plans in minutes. Experience the future of prefab construction where efficiency meets precision.</p>
+            <a href="#signup" class="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition">Get Started</a>
+        </section>
+
+        <section class="mb-16">
+            <div class="max-w-6xl mx-auto">
+              <video class="rounded-lg shadow-md w-full" controls>
+                <source src="assets/videos/maistro-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+        </section>
+
+        <section id="features" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center feature-card">
+                    <div class="feature-icon bg-blue-100 text-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Lightning-Fast Timber Framing</h3>
+                    <p>Harness the power of AI to generate complete timber framing designs in seconds, not days.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center feature-card">
+                    <div class="feature-icon bg-red-100 text-red-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Real-time Material Insights</h3>
+                    <p>Access instant, comprehensive Bills of Materials for accurate costing and streamlined procurement.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center feature-card">
+                    <div class="feature-icon bg-purple-100 text-purple-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Streamlined Panelized Wall Design</h3>
+                    <p>Revolutionize your fabrication and assembly process with our intelligent wall panelization system, reducing on-site assembly time and transportation costs.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center feature-card">
+                    <div class="feature-icon bg-indigo-100 text-indigo-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Instant Documentation</h3>
+                    <p>Generate detailed construction documentation for every wall with a single click, from material lists to assembly instructions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Maistro - AI-Powered Design for Prefab Innovation</title>
+            <script src="https://cdn.tailwindcss.com"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+            <link rel="stylesheet" href="css/styles.css">
+        </head>
+        <body class="bg-gray-50 text-gray-800">
+        
+        <section id="future" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Innovation Roadmap</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center feature-card">
+                    <div class="feature-icon bg-green-100 text-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Advanced 3D Truss Generator</h3>
+                    <p>Create complex roof structures with ease, optimizing for strength and material efficiency.</p>
+                    <p class="text-sm text-gray-500 mt-2">Coming in Q3</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center feature-card">
+                    <div class="feature-icon bg-yellow-100 text-yellow-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Intelligent Floor Cassette Designer</h3>
+                    <p>Automate the design of floor systems, ensuring optimal load distribution and material use.</p>
+                    <p class="text-sm text-gray-500 mt-2">Coming in Q3</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center feature-card">
+                    <div class="feature-icon bg-pink-100 text-pink-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Seamless BLT File Export</h3>
+                    <p>Integrate directly with timber machining processes, streamlining the transition from design to fabrication.</p>
+                    <p class="text-sm text-gray-500 mt-2">Coming in Q3</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center feature-card">
+                    <div class="feature-icon bg-blue-100 text-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Cost-Optimized Design Engine</h3>
+                    <p>Import your specific cost data to automatically generate designs optimized for maximum cost-effectiveness, tailored to your unique economic landscape.</p>
+                    <p class="text-sm text-gray-500 mt-2">Coming in Q3</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center feature-card">
+                    <div class="feature-icon bg-green-100 text-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Intelligent Plumbing Solutions</h3>
+                    <p>Create install-ready plumbing designs that optimize fixture placement, maximizing efficiency and minimizing costs.</p>
+                    <p class="text-sm text-gray-500 mt-2">Coming in Q4</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center feature-card">
+                    <div class="feature-icon bg-yellow-100 text-yellow-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Smart Electrical Routing</h3>
+                    <p>Effortlessly produce electrical layouts that ensure optimal performance and easy installation.</p>
+                    <p class="text-sm text-gray-500 mt-2">Coming in Q4</p>
+                </div>
+            </div>
+        </section>        
+            <section id="signup" class="mb-16">
+                <h2 class="text-3xl font-bold mb-8 text-center">Be Among the First to Experience Maistro</h2>
+                <form action="https://formspree.io/f/xblrwwqw" method="POST" class="bg-white p-8 rounded-lg shadow-lg max-w-2xl mx-auto" id="signup-form">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-lg" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-lg" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="company" class="block text-gray-700 font-bold mb-2">Company</label>
+                        <input type="text" id="company" name="company" class="w-full px-3 py-2 border rounded-lg" required>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition">Register for Early Access</button>
+                </form>
+            </section>
+
+            <div id="demo-cta" class="fixed bottom-6 right-6 z-50">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-lg transition duration-300 ease-in-out flex items-center">
+                  <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                  Schedule Demo
+                </button>
+              </div>
+
+              <div id="demo-modal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full hidden">
+                <div class="relative top-10 mx-auto p-5 border w-full max-w-2xl shadow-lg rounded-md bg-white">
+                  <div class="mt-3">
+                    <h3 class="text-lg leading-6 font-medium text-gray-900 text-center mb-4">Schedule a Demo</h3>
+                    <div id="calendly-embed" style="min-width:320px; height:850px;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="loading-indicator" class="text-center py-4 hidden">
+                <svg class="animate-spin h-8 w-8 mx-auto text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <p class="mt-2">Loading calendar...</p>
+              </div>
+
+        </body>
+        </html>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Maistro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+</body>
+</html>
