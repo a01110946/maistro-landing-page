@@ -5,17 +5,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 const CALENDLY_URL = 'https://calendly.com/fernandomaytorena/30min';
 
-// Define openScheduler in the global scope
 function openScheduler() {
   console.log('openScheduler function called');
   const modal = document.getElementById('demo-modal');
   const calendlyEmbed = document.getElementById('calendly-embed');
-  const loadingIndicator = document.getElementById('loading-indicator');
   const scheduleButton = document.getElementById('demo-cta');
 
-  if (modal && calendlyEmbed && loadingIndicator) {
+  if (modal && calendlyEmbed) {
     modal.classList.remove('hidden');
-    loadingIndicator.classList.remove('hidden');
     scheduleButton.classList.add('hidden');
     console.log('Modal opened');
     
@@ -26,13 +23,8 @@ function openScheduler() {
       prefill: {},
       utm: {}
     });
-
-    // Hide loading indicator once Calendly is loaded
-    calendlyEmbed.addEventListener('load', function() {
-      loadingIndicator.classList.add('hidden');
-    });
   } else {
-    console.error('Modal, Calendly embed, or loading indicator element not found');
+    console.error('Modal or Calendly embed element not found');
   }
 }
 
