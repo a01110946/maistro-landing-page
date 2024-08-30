@@ -38,4 +38,32 @@ document.addEventListener("DOMContentLoaded", function() {
     alert('Thank you for registering! We will be in touch soon.');
     form.reset();
   });
+
+  function openScheduler() {
+    // Replace this URL with your actual scheduling service URL
+    window.open('https://calendly.com/fernandomaytorena/30min', '_blank');
+  }
+
+  function openScheduler() {
+    document.getElementById('demo-modal').classList.remove('hidden');
+  }
+  
+  document.getElementById('close-modal').onclick = function() {
+    document.getElementById('demo-modal').classList.add('hidden');
+  }
+  
+  document.getElementById('schedule-button').onclick = function() {
+    // Replace this URL with your actual scheduling service URL
+    window.open('https://calendly.com/fernandomaytorena/30min', '_blank');
+  }
+  
+  // Close the modal if user clicks outside of it
+  window.onclick = function(event) {
+    let modal = document.getElementById('demo-modal');
+    if (event.target == modal) {
+      modal.classList.add('hidden');
+    }
+  }
+
+
 });
